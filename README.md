@@ -21,7 +21,13 @@ Valid genders: ```['male', 'female', 'other']```
 
 ### Create CRUD for User
 ### Persist data on MongoDB Atlas
-### Add Middleware to /user to check for Admin privilleges and return age if is admin
+### Add Middleware to /user to check for Admin privilleges and return age if is admin 
+```javascript
+HEADER
+{
+  role: "admin"
+}
+```
 ### Create PetModel
 ```javascript
 Pet {
@@ -30,6 +36,6 @@ Pet {
 }
 ```
 ### Create CRUD for Pet
-### Add method "addPet" for User (POST /user/pet/petId)
-### Add method "removePet" from User (DELETE /user/pet/petId)
+### Add method "addPet" for User (POST /user/userId/pet/petId)
+### Add method "removePet" from User (DELETE /user/userId/pet/petId)
 ### Create route /user/pets/ to retrieve all pets from a User

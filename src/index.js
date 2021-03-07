@@ -65,6 +65,6 @@ app.put('/pets/:id', putPet)
 
 app.delete('/pets/:id', deletePet)
 
-app.listen(8000, () => {
+app.listen(process.env.PORT || 8000, () => {
   console.log("Servidor iniciado em localhost:8000")
 })
